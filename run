@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /home/std/webSecc/labF/Lab
+source ve/bin/activate
+uwsgi --http 127.0.0.1:3002 --master -p 4 -w app:app
